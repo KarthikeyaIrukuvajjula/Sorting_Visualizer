@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="icon" href="images/broTabIcon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="headingBox"><img src="images/broTabIcon.png" class="icon"><div class="heading">Sorting Visualizer</div></div>
+        <div class="nav">
+            <div class="array-inputs">
+                <p>Size of the Array</p>
+                <input id="a_size" type="range" min=10 max=25 step=1 value=15 class="slider"> <!--  range lies b/w 20 to 100 and range changes by 1 step every time and initial default value is set as 40 -->
+                <p>Speed of the Algorithm</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=3 class="slider">
+            </div>
+            <div class="generate_array">
+                 <button id="a_generate">Generate New Array!</button>  <!--to generate new array -->
+            </div>
+        </div>
+        
+        <div class="algorithms">
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                </div>
+        </div>
+    
+        
+    </div>
+
+    <div class="section">
+        
+        <div class="secLeft" id="array_container">
+        </div>
+        <div class="secRight">
+            <div class="sizeOfArray" id="arraySize">
+
+            </div>
+            <div class="indication">
+                <div class="blueColor">
+                    <div class="boxB"></div>
+                    <div class="box">Indicates the elements are not sorted.</div>
+                </div>
+                <div class="yellowColor">
+                    <div class="boxY"></div>
+                    <div class="box">Indicate the elements are being compared.</div>
+                </div>
+                <div class="redColor">
+                    <div class="boxR"></div>
+                    <div class="box">Highlight the elements of swap operation.</div>
+                </div>
+                <div class="greenColor">
+                    <div class="boxG"></div>
+                    <div class="box">Indicate that the elements are in its final sorted position.</div>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+    <div class="footer">
+        <div id="Info_Cont1">
+
+            <h3>TIME COMPLEXITY</h3>
+
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="Info_Cont2">
+
+            <h3>SPACE COMPLEXITY</h3>
+
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+</body>
+</html>

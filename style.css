@@ -1,0 +1,281 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header{
+  background-color: #497690;
+  background-size: 100% 80%;
+  border-radius: 10px;
+  
+}
+.header .headingBox{
+  padding-top: 0.5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.header .headingBox .icon{
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.header .headingBox .heading{
+  padding: 1%;
+  color: whitesmoke;
+  font-size: 24px;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: whitesmoke;
+  width: 80%;
+  height: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-image: url(images/sliderThumb.gif);
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.nav {
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 0.5% 5%;
+}
+
+.nav .array-inputs {
+  display: grid;
+  grid-row-gap: 10%;
+    grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 3% 3%;
+}
+
+.nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+
+.nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+.nav .generate_array{
+  padding-left: 60%;
+  padding-top: 2.3%;
+}
+.nav .generate_array #a_generate {
+  background-color: rgb(36, 87, 205,0.7);
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  padding: 3%;
+  box-shadow:  5px 5px 10px -1px rgba(255, 255, 255, 0.8),
+                -5px -5px 10px -1px rgba(255, 255, 255, 0.8);
+  
+}
+.nav .generate_array #a_generate:hover {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  box-shadow:  5px 5px 10px -1px rgb(36, 87, 205,0.7),
+                -5px -5px 10px -1px rgb(36, 87, 205,0.7);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.algorithms{
+  background-color: transparent;
+  padding: 0.5%;
+}
+
+.algorithms .algos {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  justify-content: space-around;
+  
+}
+
+.algorithms .algos button {
+  background-color: rgb(36, 87, 205,0.7);
+  color: white;
+  border: none;
+  padding: 1%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow:  5px 5px 10px -1px rgba(255, 255, 255, 0.8),
+                  -5px -5px 10px -1px rgba(255, 255, 255, 0.8);
+}
+
+.algorithms .algos button:hover {
+  background-image: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow:  5px 5px 10px -1px rgb(36, 87, 205,0.7),
+                -5px -5px 10px -1px rgb(36, 87, 205,0.7);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.algorithms .algos .butt_locked {
+  cursor: no-drop;
+}
+
+.algorithms .algos .butt_locked:hover {
+  background-color: whitesmoke;
+  cursor: no-drop;
+}
+.algorithms .algos .butt_selected {
+
+  background-color: whitesmoke;
+  color: green;
+}
+
+.algorithms .algos .butt_selected:hover {
+  background-color: whitesmoke;
+  color: green;
+  cursor:  none;
+}
+
+.algorithms .algos .butt_unselected:hover {
+  background-color:whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+
+.section {
+  
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.section .secLeft{
+  background-image: url(images/sectionBG.jpg);
+  background-size: 100% 48vh;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section .secRight{
+  background-color: white;
+  border-radius: 10px;
+  border-style: outset;
+  border-width: 5px;
+  color: rgb(0, 0, 0);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.section .secRight .sizeOfArray {
+  font-size: 25px;
+  padding: 3%;
+  text-align: center;
+}
+.section .secRight .indication{
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+}
+.section .secRight .indication .blueColor,.yellowColor,.redColor,.greenColor{
+  padding: 3%;
+  display: flex;
+  gap: 20px;
+}
+.section .secRight .indication .blueColor .boxB,.boxY,.boxR,.boxG{
+  border-radius: 25px;
+  border-style: outset;
+  border-width: 3px;
+  width: 20px;
+  height: 20px;
+}
+.section .secRight .indication .box{
+  padding-left: 16px;
+  width: 100%;
+  height: 10%;
+  font-size: 14px;
+
+}
+
+
+.section .secRight .indication .blueColor .boxB{
+  background-color: rgb(36, 87, 205);
+}
+.section .secRight .indication .yellowColor .boxY{
+  background-color: yellow;
+}
+
+.section .secRight .indication .redColor .boxR{
+  background-color: red;
+}
+
+.section .secRight .indication .greenColor .boxG{
+  background-color: green;
+}
+.section #array_container {
+  display: flex;
+  width: 100%;
+  height: 47.5vh;
+}
+.section .ran_values{
+  color: white;
+  position: relative;
+  padding-top: 2%;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  border-style:inset;
+  border-width: 5px;
+}
+.footer{
+  background-color: #497690;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20%;
+  border-radius: 10px;
+}
+
+
+.footer .Complexity_Containers {
+  margin-top: 2%;
+  
+}
+
+.footer .Complexity_Containers .Pair_Definitions {
+  margin-top: 2%;
+}
+
+.footer .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+.footer .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+.footer #Info_Cont1,#Info_Cont2 {
+  padding: 2%;
+}
+
+.footer #Info_Cont1 h3,#Info_Cont2 h3 {
+  text-decoration: underline;
+}
+
